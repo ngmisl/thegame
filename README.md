@@ -22,3 +22,5 @@ Goal is for players to fight the Monster.
 - [] Make the Resurrection more dynamic
 - [] Fix CSS across the board
 - [] Add costs (currently 0.0001 TestnetMatic) to const runReviveAction in Arena/index.jsx
+- [] Add Leaderboard (Damage)
+- [] Add a global chat
