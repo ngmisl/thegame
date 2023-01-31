@@ -24,3 +24,4 @@ Goal is for players to fight the Monster.
 - [] Add costs (currently 0.0001 TestnetMatic) to const runReviveAction in Arena/index.jsx
 - [] Add Leaderboard (Damage)
 - [] Add a global chat
+- [] There is a chance attacks miss (both character and monster) - this needs to be reflected in the result
