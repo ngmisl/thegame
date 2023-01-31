@@ -9,6 +9,7 @@ import LoadingIndicator from "./Components/LoadingIndicator";
 
 
 const App = () => {
+    
     // State
     const [currentAccount, setCurrentAccount] = useState(null);
     const [characterNFT, setCharacterNFT] = useState(null);
