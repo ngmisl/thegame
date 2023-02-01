@@ -18,10 +18,10 @@ Goal is for players to fight the Monster.
 
 ## TODOS
 
-- [] Implement web3modal or WAGMI (I tried already and failed to implement)
-- [] Make the Resurrection more dynamic
-- [] Fix CSS across the board
-- [] Add costs (currently 0.0001 TestnetMatic) to const runReviveAction in Arena/index.jsx
-- [] Add Leaderboard (Damage)
-- [] Add a global chat
-- [] There is a chance attacks miss (both character and monster) - this needs to be reflected in the result
+- [ ] Implement web3modal or WAGMI (I tried already and failed to implement)
+- [ ] Make the Resurrection more dynamic
+- [ ] Fix CSS across the board
+- [ ] Add costs (currently 0.0001 TestnetMatic) to const runReviveAction in Arena/index.jsx
+- [ ] ~~Add Leaderboard (Damage)~~ (postponed to v1)
+- [ ] Add a global chat
+- [ ] There is a chance attacks miss (both character and monster) - this needs to be reflected in the result
