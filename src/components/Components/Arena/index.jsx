@@ -46,7 +46,10 @@ const Arena = ({ characterNFT, setCharacterNFT, currentAccount }) => {
   const runReviveAction = async () => {
     try {
       if (gameContract) {
-        const txn = await gameContract.revive();
+        const price = "0.0001";
+        const txn = await gameContract.revive({
+          value: ethers.utils.parseEther(price),
+        });
         await txn.wait();
         console.log(txn);
       }
