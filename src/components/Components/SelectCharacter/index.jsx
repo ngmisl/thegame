@@ -63,9 +63,6 @@ const SelectCharacter = ({ setCharacterNFT }) => {
         const characterNFT = await gameContract.checkIfUserHasNFT();
         console.log("CharacterNFT: ", characterNFT);
         setCharacterNFT(transformCharacterData(characterNFT));
-        alert(
-          `Your NFT is all done -- see it here: https://testnets.opensea.io/assets/${gameContract}/${tokenId.toNumber()}`
-        );
       }
     };
 
