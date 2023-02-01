@@ -8,6 +8,16 @@ import Arena from "./Components/Arena";
 import LoadingIndicator from "./Components/LoadingIndicator";
 
 
+const checkNetwork = async () => {
+    try { 
+      if (window.ethereum.networkVersion !== '80001') {
+        alert("Please connect to Mumbai!")
+      }
+    } catch(error) {
+      console.log(error)
+    }
+  };
+
 const App = () => {
     
     // State
@@ -18,12 +28,14 @@ const App = () => {
     useEffect(() => {
         setIsLoading(true);
         checkIfWalletIsConnected();
+        checkNetwork();
     }, []);
 
     /*
      * Add this useEffect right under the other useEffect where you are calling checkIfWalletIsConnected
      */
     useEffect(() => {
+        
         const fetchNFTMetadata = async () => {
             console.log("Checking for Character NFT on address:", currentAccount);
 

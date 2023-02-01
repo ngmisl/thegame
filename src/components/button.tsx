@@ -7,6 +7,8 @@ interface Props {
     balance?: "show" | "hide";
   }
 
-const Wagmi = async() => {
+function Wagmi() {
     return ( <Web3Button />    )
 }
+
+export default Wagmi;

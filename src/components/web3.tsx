@@ -11,8 +11,8 @@ import { configureChains, createClient, WagmiConfig } from "wagmi";
 
 import App from "./App";
 
-import { polygon } from "wagmi/chains";
-const chains = [polygon];
+import { polygonMumbai } from "wagmi/chains";
+const chains = [polygonMumbai];
 
 
 // Wagmi client
@@ -28,7 +28,7 @@ const wagmiClient = createClient({
 // Web3Modal Ethereum Client
 const ethereumClient = new EthereumClient(wagmiClient, chains);
 
-function web3() {
+function Web3() {
     return (
       <>
         <WagmiConfig client={wagmiClient}>
@@ -42,4 +42,4 @@ function web3() {
     );
   }
 
-export default web3;
+export default Web3;
