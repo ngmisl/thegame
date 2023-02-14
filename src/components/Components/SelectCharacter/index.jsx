@@ -134,7 +134,7 @@ const SelectCharacter = ({ setCharacterNFT }) => {
   return (
     <div className="select-character-container">
       <h2>Mint Your Hero. Choose wisely.</h2>
-      <h3>Season 0 / Genesis Edition Cost: 1 $CANTO</h3>
+      <h3>Season 0 / Genesis Edition</h3>
       {/* Only show this when there are characters in state */}
       {characters.length > 0 && (
         <div className="character-grid">{renderCharacters()}</div>

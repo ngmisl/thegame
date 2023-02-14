@@ -9,8 +9,8 @@ import LoadingIndicator from "./Components/LoadingIndicator";
 
 const checkNetwork = async () => {
     try { 
-      if (window.ethereum.networkVersion !== '80001') {
-        alert("Please connect to Mumbai!")
+      if (window.ethereum.networkVersion !== '7700') {
+        alert("Please connect to Canto!")
       }
     } catch(error) {
       console.log(error)
@@ -159,15 +159,10 @@ const App = () => {
 
     return (
         <div className="App">
-            <div className="container">
-                <div className="header-container">
                     <p className="header gradient-text">⚔️ Encanto Game ⚔️</p>
                     <p className="sub-text">Team up to fight the Evil Dragooon!</p>
                     {renderContent()}
-                </div>
-                <div className="footer-container">
-            </div>
-        </div>
+
         </div>
     );
 };
